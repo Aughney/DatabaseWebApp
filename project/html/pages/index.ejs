@@ -3,6 +3,20 @@
     <% include ../helpers/head %>
 </head>
 
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCDOYmqFyL9Lx_1whVu-Hv440CXqGXVlnc",
+    authDomain: "niamho-aea68.firebaseapp.com",
+    databaseURL: "https://niamho-aea68.firebaseio.com",
+    projectId: "niamho-aea68",
+    storageBucket: "niamho-aea68.appspot.com",
+    messagingSenderId: "660454200770"
+  };
+  firebase.initializeApp(config);
+</script>
+
 <body>
 
   <!-- the classes 'page-header' and 'btn btn-default' create bootstrap components.  -->
@@ -23,7 +37,7 @@
     <form id="message-form" action="#">
       <div class="form-group">
         <label for="new-post-title">
-          Post title...
+          Post title.
         </label>
         <input type="text" id="new-post-title">
       </div>
